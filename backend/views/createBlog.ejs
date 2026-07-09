@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/css/bootstrap.ejs') %>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Homepage</title>
+</head>
+
+<body>
+    <%- include('./partials/components/nav.ejs') %>
+
+        <div class="container">
+            <div class="my-5">
+                <h1>Create new blog</h1>
+            </div>
+
+            <form class="form" method="post" action="/blog/create" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="coverImage" class="form-label">Cover Image</label>
+                    <input type="file" name="coverImage">
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="title" type="text" class="form-control" id="title" aria-describedby="title">
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Content</label>
+                    <textarea name="content" id="content" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+
+        <%- include('./partials/js/bootstrap.ejs') %>
+</body>
+
+</html>

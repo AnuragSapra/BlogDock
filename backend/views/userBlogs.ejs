@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/css/bootstrap.ejs') %>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Blogs</title>
+</head>
+
+<body>
+    <%- include('./partials/components/nav.ejs') %>
+
+        <div class="container">
+            <div class="row mt-5">
+                <% blogs.forEach(blog=> { %>
+                    <div class="card mx-2 col" style="width: 18rem;">
+                        <img src="/uploads/<%= blog.coverimage %>" class="card-img-top"
+                            style="height: 200px; object-fit: cover;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= blog.title %>
+                            </h5>
+                            <a href="/blog/view/<%= blog._id %>" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+
+                    <% }) %>
+            </div>
+        </div>
+
+        <%- include('./partials/js/bootstrap.ejs') %>
+</body>
+
+</html>
