@@ -40,6 +40,14 @@ A full-stack blogging platform built with the MERN stack.
 
 ![Home](screenshots/home.png)
 
+### Login
+
+![Login](screenshots/login.png)
+
+### Signup
+
+![Signup](screenshots/signup.png)
+
 ### Create Blog
 
 ![Create Blog](screenshots/create-blog.png)
@@ -47,11 +55,6 @@ A full-stack blogging platform built with the MERN stack.
 ### View Blog
 
 ![View Blog](screenshots/view-blog.png)
-
-### Login
-
-![Login](screenshots/login.png)
-
 ## Installation
 
 ### Backend
