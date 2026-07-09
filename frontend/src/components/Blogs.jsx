@@ -32,7 +32,18 @@ export default function Blogs() {
   }, [fetchBlogs]);
 
   if (loading) {
-    return <div className="container mt-5">Loading...</div>;
+    return (
+      <div
+        className="container d-flex flex-column justify-content-center align-items-center text-center"
+        style={{ minHeight: "80vh" }}
+      >
+        <p>Loading...</p>
+        <small>
+          This project is hosted on Render's free tier. The first request after
+          inactivity may take up to 30-40 seconds.
+        </small>
+      </div>
+    );
   }
   if (error) {
     return (
