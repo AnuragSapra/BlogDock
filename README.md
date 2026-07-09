@@ -1,4 +1,4 @@
-# MERN Blog Application
+# BlogDock
 
 A full-stack blogging platform built with the MERN stack.
 
@@ -6,23 +6,25 @@ A full-stack blogging platform built with the MERN stack.
 
 - User Authentication
 - JWT Cookie Authentication
-- Role-Based Authorization
-- Create, Read and Delete Blogs
-- Image Uploads
+- Role-Based Authorization (Admin/User)
+- Create Blogs
+- View Blogs
+- Delete Blogs (Admin Only)
+- Image Uploads with Cloudinary
 - Comment System
-- Responsive UI
-- Error Handling
-- Loading States
+- Responsive Design
+- Loading & Error States
 
 ## Tech Stack
 
-Frontend
+### Frontend
 
 - React
 - React Router
 - Bootstrap
+- Vite
 
-Backend
+### Backend
 
 - Node.js
 - Express.js
@@ -34,9 +36,21 @@ Backend
 
 ## Screenshots
 
-(Home)
-(Create Blog)
-(View Blog)
+### Home
+
+![Home](screenshots/home.png)
+
+### Create Blog
+
+![Create Blog](screenshots/create-blog.png)
+
+### View Blog
+
+![View Blog](screenshots/view-blog.png)
+
+### Login
+
+![Login](screenshots/login.png)
 
 ## Installation
 
@@ -44,7 +58,7 @@ Backend
 
 npm install
 
-npm run dev
+npm start
 
 ### Frontend
 
@@ -70,8 +84,5 @@ VITE_API_URL=
 ## Future Improvements
 
 - Blog Editing
-- Rich Text Editor
-- Search
-- Categories
 - Likes
 - Pagination
