@@ -26,6 +26,13 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
+          <img
+            src="/feather.svg"
+            alt="BlogDock logo"
+            width="24"
+            height="24"
+            className="me-2 mb-1"
+          />
           Blog Dock
         </Link>
         <button
